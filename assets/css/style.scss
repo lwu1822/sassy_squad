@@ -1,8 +1,7 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-
+@import 'jekyll-theme-cayman';
 /* "row style" is flexible size and aligns pictures in center */
 .row {
     align-items: center;
