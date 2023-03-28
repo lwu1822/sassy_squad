@@ -1,5 +1,4 @@
 ## Sassy Squad
-> Sassy Squad is a team created or ruin Sachit's life.
 - Only success, no failing.
 
 ## Schedule
