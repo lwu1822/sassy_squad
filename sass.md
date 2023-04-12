@@ -10,6 +10,13 @@ We will be teaching the **Scss** syntax because it is more commonly used.
 
 ### Sass Topics
 
+<br>
+
+<button class="nestingButton" onclick="nesting()">Nesting</button>
+<button class="mixinButton" onclick="mixin()">Mixin</button>
+
+<br>
+
 
 
 
@@ -22,3 +29,15 @@ We will be teaching the **Scss** syntax because it is more commonly used.
 
 
 ### Quiz!!!
+
+
+
+<script>
+    function nesting() {
+        window.location.href = "{{ site.baseurl }}/nesting";
+    }
+    
+    function mixin() {
+        window.location.href = "{{ site.baseurl }}/mixin";
+    }
+</script>
