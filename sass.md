@@ -6,10 +6,16 @@ SASS is an improvement on CSS in that there are methods of abstraction. It is a 
 
 As you learn about Sass, you might notice something called Scss. They are basically the same thing except that Scss uses curly braces and semicolons to distinguish between lines. Sass uses indentation and newlines instead.
 
-We will be teaching **Scss** because it is more commonly used.
+We will be teaching the **Scss** syntax because it is more commonly used.
+
+### Sass Topics
+
+
 
 
 #### Nesting
+
+
 
 
 #### Procedural Abstraction (Interpolation, @mixin, etc.)
