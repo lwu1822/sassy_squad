@@ -11,6 +11,14 @@
   color: #ffffff; 
 }
 
+%matchingButton {
+  width: 10em;
+  height: 2em;
+  transition: transform 1s;
+  color: #ffffff;
+  background: #95cce8;
+}
+
 %buttonAnimation:hover {
   transform: scale(1.15);
 }
@@ -39,7 +47,6 @@
 
 @for $i from 1 through 30 {
   .Button#{$i} {
-      @extend %buttonLayout;
-      background: #95cce8;
+      @extend %matchingButton;
   }
 }
