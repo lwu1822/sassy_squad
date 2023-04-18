@@ -23,7 +23,7 @@
 
 .nestingButton {
   @extend %buttonAnimation;
-  background: #95cce8;
+  background: radial-gradient( #3a9fa7, #8ae0e6);
 }
 
 .mixinButton {
