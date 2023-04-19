@@ -4,53 +4,72 @@
 @import 'jekyll-theme-cayman';
 
 
-%buttonLayout {
-  width: 15em;
-  height: 20em;
-  transition: transform 1s;
-  color: #ffffff; 
+// %buttonLayout {
+//   width: 15em;
+//   height: 20em;
+//   transition: transform 1s;
+//   color: #ffffff; 
+// }
+
+// %matchingButton {
+//   width: 8em;
+//   height: 4em;
+//   transition: transform 1s;
+//   color: #ffffff;
+//   background: #95cce8;
+// }
+
+// %matchingButton:hover {
+//   background: #85b9d4;
+// }
+
+// %buttonAnimation:hover {
+//   transform: scale(1.15);
+// }
+
+// .nestingButton {
+//   @extend %buttonLayout;
+//   background: radial-gradient( #3a9fa7, #8ae0e6);
+//   position: relative;
+// }
+
+// .nestingButton {
+//   @extend %buttonAnimation;
+//   background: radial-gradient( #3a9fa7, #8ae0e6);
+// }
+
+// .mixinButton {
+//   @extend %buttonLayout;
+//   background: radial-gradient( #643aa7, #d78ae6);
+//   position: absolute;
+//   left: 60em;
+// }
+
+// .mixinButton {
+//   @extend %buttonAnimation;
+// }
+
+// @for $i from 1 through 30 {
+//   .Button#{$i} {
+//       @extend %matchingButton;
+//   }
+// }
+
+.btn {
+  font-size: 1rem;
+  font-weight: 350;
+  
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-delay: ease;
+  transition-delay: 0s;
+  background-color: 0.3s;
+  color: 0.3s;
+
 }
 
-%matchingButton {
-  width: 8em;
-  height: 4em;
-  transition: transform 1s;
-  color: #ffffff;
-  background: #95cce8;
-}
-
-%matchingButton:hover {
-  background: #85b9d4;
-}
-
-%buttonAnimation:hover {
-  transform: scale(1.15);
-}
-
-.nestingButton {
-  @extend %buttonLayout;
-  background: radial-gradient( #3a9fa7, #8ae0e6);
-  position: relative;
-}
-
-.nestingButton {
-  @extend %buttonAnimation;
-  background: radial-gradient( #3a9fa7, #8ae0e6);
-}
-
-.mixinButton {
-  @extend %buttonLayout;
-  background: radial-gradient( #643aa7, #d78ae6);
-  position: absolute;
-  left: 60em;
-}
-
-.mixinButton {
-  @extend %buttonAnimation;
-}
-
-@for $i from 1 through 30 {
-  .Button#{$i} {
-      @extend %matchingButton;
-  }
+.btn:hover {
+  transform: translateY(-5px);
+  background-color: var(--clr-accent);
+  color: var(--light);
 }
