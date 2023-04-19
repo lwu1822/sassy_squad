@@ -10,15 +10,19 @@ JavaScript is best for web-based and mobile games because it is generally easy t
 To have a UI (User Interface), you will need to use HTML. We can put our JS file as a script in the html by using script tags or linking a file. Script tags are fine for simple pages, but become confusing if you are doing complicated JS like a large app. 
 
 **It looks like this**
-![JavaScript inside HTML]({{site.baseurl}}/imagessass/javainhtml.png)
-<img src="./imagessass/javainhtml.png" alt="app-screen" width="300" height="200/>
+
+<img src="/imagessass/javainhtml.png" width="400" height="250">
+
 # Where do you store the JavaScript Code?
 
 You could have a separate JavaScript file full of your JavaScript code. The filename will end in .js
-![VSCODE JS File]({{site.baseurl}}/imagessass/jsfile.png)
+<img src="/imagessass/jsfile.png" width="650" height="400">
+
 
 To point to your external JavaScript file, or connect the code to your HTML frontend, you could paste this src Attribute at the top of the page. 
-![Import JS File]({{site.baseurl}}/imagessass/importjsfile.png)
+
+<img src="/imagessass/importjsfile.png" width="400" height="250">
+
 
 
 
