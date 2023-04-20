@@ -21,6 +21,10 @@
    background: #85b9d4;
 }
 
+%buttonAnimation:hover {
+  transform: scale(1.15);
+}
+
 .nestingButton {
    @extend %buttonLayout;
    background: radial-gradient( #3a9fa7, #8ae0e6);
