@@ -21,6 +21,10 @@
    background: #85b9d4;
 }
 
+%matchingButton:active {
+  background: rgb(random(255), random(255), random(255));
+}
+
 %buttonAnimation:hover {
   transform: scale(1.15);
 }
