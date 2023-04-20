@@ -4,22 +4,22 @@
 @import 'jekyll-theme-cayman';
 
 
-%buttonLayout {
-  width: 15em;
-  height: 20em;
-  color: #ffffff; 
-}
+// %buttonLayout {
+//   width: 15em;
+//   height: 20em;
+//   color: #ffffff; 
+// }
 
-%matchingButton {
-  width: 8em;
-  height: 4em;
-  color: #ffffff;
-  background: #95cce8;
-}
+// %matchingButton {
+//   width: 8em;
+//   height: 4em;
+//   color: #ffffff;
+//   background: #95cce8;
+// }
 
-%matchingButton:hover {
-  background: #85b9d4;
-}
+// %matchingButton:hover {
+//   background: #85b9d4;
+// }
 
 .nestingButton {
   @extend %buttonLayout;
@@ -39,15 +39,15 @@
   left: 60em;
 }
 
-.mixinButton {
-  @extend %buttonAnimation;
-}
+// .mixinButton {
+//   @extend %buttonAnimation;
+// }
 
-@for $i from 1 through 30 {
-  .Button#{$i} {
-      @extend %matchingButton;
-  }
-}
+// @for $i from 1 through 30 {
+//   .Button#{$i} {
+//       @extend %matchingButton;
+//   }
+// }
 
 .btn {
   font-size: 1rem;
