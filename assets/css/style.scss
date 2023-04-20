@@ -4,28 +4,22 @@
 @import 'jekyll-theme-cayman';
 
 
-// %buttonLayout {
-//   width: 15em;
-//   height: 20em;
-//   transition: transform 1s;
-//   color: #ffffff; 
-// }
+%buttonLayout {
+  width: 15em;
+  height: 20em;
+  color: #ffffff; 
+}
 
-// %matchingButton {
-//   width: 8em;
-//   height: 4em;
-//   transition: transform 1s;
-//   color: #ffffff;
-//   background: #95cce8;
-// }
+%matchingButton {
+  width: 8em;
+  height: 4em;
+  color: #ffffff;
+  background: #95cce8;
+}
 
-// %matchingButton:hover {
-//   background: #85b9d4;
-// }
-
-// %buttonAnimation:hover {
-//   transform: scale(1.15);
-// }
+%matchingButton:hover {
+  background: #85b9d4;
+}
 
 .nestingButton {
   @extend %buttonLayout;
