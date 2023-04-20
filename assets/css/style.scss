@@ -62,7 +62,7 @@ $button-list: [];
 // more matching here
 
 @for $i from 1 through 30 {
-  list.append($button-list, Button#{$i}){}
+  append($button-list, Button#{$i});
   .Button#{$i} {
        @extend %matchingButton;
    }
