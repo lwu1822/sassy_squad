@@ -60,7 +60,7 @@
   font-weight: 350;
   
   transition-property: transform;
-  transition-duration: 5.3s;
+  transition-duration: 0.3s;
   transition-delay: ease;
   transition-delay: 0s;
   background-color: 0.3s;
@@ -69,7 +69,7 @@
 }
 
 .btn:hover {
-  transform: translateY(1000px);
+  transform: translateY(10000px);
   background-color: var(--clr-accent);
   color: var(--light);
 }
