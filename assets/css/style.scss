@@ -27,33 +27,33 @@
 //   transform: scale(1.15);
 // }
 
-// .nestingButton {
-//   @extend %buttonLayout;
-//   background: radial-gradient( #3a9fa7, #8ae0e6);
-//   position: relative;
-// }
+.nestingButton {
+  @extend %buttonLayout;
+  background: radial-gradient( #3a9fa7, #8ae0e6);
+  position: relative;
+}
 
-// .nestingButton {
-//   @extend %buttonAnimation;
-//   background: radial-gradient( #3a9fa7, #8ae0e6);
-// }
+.nestingButton {
+  @extend %buttonAnimation;
+  background: radial-gradient( #3a9fa7, #8ae0e6);
+}
 
-// .mixinButton {
-//   @extend %buttonLayout;
-//   background: radial-gradient( #643aa7, #d78ae6);
-//   position: absolute;
-//   left: 60em;
-// }
+.mixinButton {
+  @extend %buttonLayout;
+  background: radial-gradient( #643aa7, #d78ae6);
+  position: absolute;
+  left: 60em;
+}
 
-// .mixinButton {
-//   @extend %buttonAnimation;
-// }
+.mixinButton {
+  @extend %buttonAnimation;
+}
 
-// @for $i from 1 through 30 {
-//   .Button#{$i} {
-//       @extend %matchingButton;
-//   }
-// }
+@for $i from 1 through 30 {
+  .Button#{$i} {
+      @extend %matchingButton;
+  }
+}
 
 .btn {
   font-size: 1rem;
