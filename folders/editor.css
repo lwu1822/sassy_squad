@@ -5,38 +5,32 @@
   }
   
   
-  .main-editor {
+  .editor {
     background: rgba(0, 0, 0, 0.91);
     display: flex;
     width: 100%;
-    padding: 1rem;
-    box-shadow:0 2px 3px black;
-    position:fixed;
     height:100vh;
-     justify-content: center;
-      align-items: center;
-    border: 7px solid #36383f;
+    justify-content: center;
+    align-items: center;
   }
   
-  .first {
-    background-color: #ffffff;
+  .textbox {
+    background-color: #d4d4d4;
     width: 50%;
     overflow-x: hidden;
     overflow-y: auto;
     white-space: pre;
-    box-shadow: 0 1px 1px rgb(22, 22, 22);
     outline: none;
-    padding: 0.4rem;
-    height: 90vh;
+    padding: 0.5rem;
+    height: 100%;
   }
   
-  .second {
+  .output {
     background-color: rgb(255, 255, 255);
     width: 50%;
     overflow-y: auto;
     white-space: pre;
     right: 0;
-    box-shadow: 0 1px 1px rgb(22, 22, 22);
-    padding: 0.4rem;
-    height: 90vh;
+    padding: 0.5rem;
+    height: 100%;
   }
