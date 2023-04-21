@@ -4,34 +4,11 @@
 @import 'jekyll-theme-cayman';
 @use 'sass:list';
 
-$clicked: false;
-$button-list: [];
-
 %buttonLayout {
   width: 15em;
   height: 20em;
    color: #ffffff; 
 }
-
-// matching stuff here
-
-%matchingButton {
-   width: 8em;
-   height: 4em;
-   color: #ffffff;
-   background: #95cce8;
-}
-
-%matchingButton:hover {
-   background: #85b9d4;
-}
-
-%matchingButton:active {
-  background: rgb(random(255), random(255), random(255));
-  $clicked: true;
-}
-
-// matching ends here
 
 %buttonAnimation:hover {
   transform: scale(1.15);
@@ -59,14 +36,31 @@ $button-list: [];
    @extend %buttonAnimation;
 }
 
-// more matching here
+// matching stuff here
+// Kudos to https://marina-ferreira.github.io/tutorials/js/memory-game/. We wouldn't have gotten far without a tutorial.
+
+%matchingButton {
+   width: 8em;
+   height: 4em;
+   color: #ffffff;
+   background: #95cce8;
+}
+
+%matchingButton:hover {
+   background: #85b9d4;
+}
+
+%matchingButton:active {
+  background: rgb(random(255), random(255), random(255));
+}
 
 @for $i from 1 through 30 {
-  //append($button-list, Button#{$i});
   .Button#{$i} {
        @extend %matchingButton;
    }
 }
+
+// matching ends here
 
 .btn {
   font-size: 1rem;
