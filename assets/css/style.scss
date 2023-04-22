@@ -4,6 +4,14 @@
 @import 'jekyll-theme-cayman';
 @use 'sass:list';
 
+p {
+   color: #d3caca;
+}
+
+body {
+   background-color: black;
+}
+
 %buttonLayout {
    width: 15em;
    height: 20em;
