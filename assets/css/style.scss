@@ -5,36 +5,33 @@
 @use 'sass:list';
 
 %buttonLayout {
-  width: 15em;
-  height: 20em;
+   width: 15em;
+   height: 20em;
    color: #ffffff; 
+   margin-right: 10%;
 }
 
 %buttonAnimation:hover {
   transform: scale(1.15);
 }
 
-.nestingButton {
-   @extend %buttonLayout;
-   background: radial-gradient( #3a9fa7, #8ae0e6);
-   position: relative;
+.flex {
+   display: flex; 
 }
 
 .nestingButton {
+   @extend %buttonLayout;
    @extend %buttonAnimation;
    background: radial-gradient( #3a9fa7, #8ae0e6);
 }
+
 
 .mixinButton {
    @extend %buttonLayout;
+   @extend %buttonAnimation;
    background: radial-gradient( #643aa7, #d78ae6);
-   position: absolute;
-   left: 60em;
 }
 
- .mixinButton {
-   @extend %buttonAnimation;
-}
 
 // matching stuff here
 // Kudos to https://marina-ferreira.github.io/tutorials/js/memory-game/. We wouldn't have gotten far without a tutorial.

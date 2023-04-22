@@ -12,8 +12,10 @@ We will be teaching the **Scss** syntax because it is more commonly used.
 
 <br>
 
-<button class="nestingButton" onclick="nesting()">Nesting</button>
-<button class="mixinButton" onclick="mixin()">Mixin</button>
+<div class="flex">
+    <button class="nestingButton" onclick="nesting()">Nesting</button>
+    <button class="mixinButton" onclick="mixin()">Mixin</button>
+</div>
 
 <br>
 
