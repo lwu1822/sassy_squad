@@ -36,8 +36,33 @@
    @extend %buttonAnimation;
 }
 
+.btn {
+  font-size: 1rem;
+  font-weight: 350;
+  
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-delay: ease;
+  transition-delay: 0s;
+  background-color: 0.3s;
+  color: 0.3s;
+
+}
+
+.btn:hover {
+  transform: translateY(-10px);
+  background-color: var(--clr-accent);
+  color: var(--light);
+}
+
+
 // matching stuff here
 // Kudos to https://marina-ferreira.github.io/tutorials/js/memory-game/. We wouldn't have gotten far without a tutorial.
+
+.MemBoard{
+  height: 100vh;
+  width: 100vw;
+}
 
 %matchingButton {
    width: 8em;
@@ -61,22 +86,3 @@
 }
 
 // matching ends here
-
-.btn {
-  font-size: 1rem;
-  font-weight: 350;
-  
-  transition-property: transform;
-  transition-duration: 0.3s;
-  transition-delay: ease;
-  transition-delay: 0s;
-  background-color: 0.3s;
-  color: 0.3s;
-
-}
-
-.btn:hover {
-  transform: translateY(-10px);
-  background-color: var(--clr-accent);
-  color: var(--light);
-}
