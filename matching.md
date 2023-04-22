@@ -4,7 +4,7 @@
 
 
 
-<body class="MemBoard>
+<body class="MemBoard">
   <br>
 
   <button class="Button1"></button>
