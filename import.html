@@ -1,0 +1,51 @@
+--- 
+layout: default
+--- 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+    <body>
+        <h1>Import</h1>
+
+        <p>After configuring a lot of styling, your SASS file might get cluttered. 
+        </p>
+
+        <img src="imagessass/sassForMultipleFile.jpg" alt="style.scss location">
+
+        <p>There is a way to split your code into multiple files and import them into one file.</p>
+
+        <p>For instance, to put the styling for <code>function.html</code> in another SASS 
+        file, first create a directory called <code>_sass</code>.</p>
+        <p>Within the directory, create another SASS file. In this case, the file is called 
+            <code>functionStyle.scss</code>
+        </p>
+
+        <p>Write your SASS code in that file. Once you are finished, switch back to <code>style.scss</code>
+            and import the file with <code>@import "<em>file-name</em>"</code>
+        </p>
+
+        <p>For instance, to import the <code>functionStyle.scss</code> file into <code>style.scss</code>
+        , the import statement would be <code>@import "functionStyle"</code>.
+        </p>
+
+
+        <button class="backButton" style="margin-top: 3em;" onclick="sassHomepage()">Back</button>
+    </body>
+
+
+</html>
+
+
+<script>
+    function sassHomepage() {
+        window.location.href = "{{ site.baseurl }}/sass";
+    }
+
+    function change() {
+        document.getElementById("change").classList.remove("hiddenText");
+        document.getElementById("change").classList.add("showHiddenText");
+    }
+</script>

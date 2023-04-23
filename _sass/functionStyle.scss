@@ -1,0 +1,13 @@
+@function sassInvert($r, $g, $b) {
+   $newColor: rgb(255 - $r, 255 - $g, 255 - $b);
+   @return $newColor; 
+}
+
+.bodyInvert {
+   background-color: sassInvert(0, 0, 0);
+}
+
+.invert p {
+   background-color: sassInvert(0, 0, 0);
+   color: sassInvert(211,202,202);
+}

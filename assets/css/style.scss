@@ -2,6 +2,7 @@
 ---
 
 @import 'jekyll-theme-cayman';
+@import "functionStyle";
 @use 'sass:list';
 
 //general dark theme settings
@@ -67,7 +68,7 @@ a {
    border-radius: 2em;
 }
 
-.gettingStartedButton, .nestingButton, .extendButton, .mixinButton, .functionButton {
+.gettingStartedButton, .nestingButton, .extendButton, .mixinButton, .functionButton, .importButton {
    @extend %buttonAnimation;
 }
 
@@ -85,12 +86,14 @@ a {
 
 .mixinButton {
    @include buttonLayout(#641379, #aa6eb6);
-   width: 23.5%;
 }
 
 .functionButton {
    @include buttonLayout(#a73a95, #d78ae6);
-   width: 23.5%;
+}
+
+.importButton {
+   @include buttonLayout(#b93737, #e68ab8);
 }
 
 //nesting.html styling
@@ -104,22 +107,6 @@ a {
       font-family: "Times New Roman", serif;
       font-size: 1em;
    }
-}
-
-
-//function.html styling
-@function sassInvert($r, $g, $b) {
-   $newColor: rgb(255 - $r, 255 - $g, 255 - $b);
-   @return $newColor; 
-}
-
-.bodyInvert {
-   background-color: sassInvert(0, 0, 0);
-}
-
-.invert p {
-   background-color: sassInvert(0, 0, 0);
-   color: sassInvert(211,202,202);
 }
 
 
