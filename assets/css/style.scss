@@ -166,6 +166,11 @@ body {
 // matching starts here
 // Kudos to https://marina-ferreira.github.io/tutorials/js/memory-game/. We wouldn't have gotten far without a tutorial.
 
+.board{
+   display: flex;
+   flex-wrap: wrap;
+}
+
 .box{
    height: 4em;
    width: 8em;
