@@ -186,10 +186,8 @@ body {
   background: rgb(random(255), random(255), random(255));
 }
 
-@for $i from 1 through 30 {
-  .Button#{$i} {
+.Card {
        @extend %matchingButton;
-   }
 }
 
 // matching ends here
