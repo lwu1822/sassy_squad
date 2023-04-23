@@ -10,7 +10,7 @@ layout: default
     <body>
         <h1>Mixin</h1>
 
-        <p>Let's take a look at the buttons again
+        <p>Let's take a look at the buttons again.
         </p>
 
         <div class="flex">
@@ -26,11 +26,20 @@ layout: default
         <p>Another way to code for the background is through the use of a mixin.</p>
 
         <p>A mixin is similar to extend in that it creates a code template that can be reused.
-            It can 
+            It can also take in parameters so that you can create dynamic styling.
         </p>
    
-        <p>What are some similarities they share? What are the differences? Click the box
-             below to see the answer.</p>
+        <p>In the example of the buttons, all three buttons have a gradient background. However,
+            the background colors are different.
+        </p>
+
+        <p>With SASS, we can create a <code>@mixin</code> at rule that takes in two colors 
+        as the parameter:</p>
+
+        <pre>
+            <div class="whiteSpaceFormat">%<em>class-name</em> { </div>
+            <div class="whiteSpaceFormat">}</div>
+        </pre>
 
         <div class="hiddenText" id="change" onclick="change()">The buttons have the same
             width and height, font color, and spacing between each button. They have 

@@ -50,14 +50,6 @@ a {
 
 
 //sass.md settings
-%buttonLayout {
-   width: 15em;
-   height: 15em;
-   color: #ffffff; 
-   margin-right: 10%;
-   border-radius: 2em;
-}
-
 %buttonAnimation:hover {
   transform: scale(1.15);
 }
@@ -66,29 +58,33 @@ a {
    display: flex; 
 }
 
-@mixin background($innerColor, $outerColor) {
+@mixin buttonLayout($innerColor, $outerColor) {
    background: radial-gradient($innerColor, $outerColor);
+   width: 15em;
+   height: 15em;
+   color: #ffffff; 
+   margin-right: 10%;
+   border-radius: 2em;
 }
 
 .gettingStartedButton, .nestingButton, .extendButton, .mixinButton {
-   @extend %buttonLayout;
    @extend %buttonAnimation;
 }
 
 .gettingStartedButton {
-   @include background(#1539db, #8a8ce6);
+   @include buttonLayout(#1539db, #8a8ce6);
 }
 
 .nestingButton {
-   @include background(#3a9fa7, #8ae0e6);
+   @include buttonLayout(#3a9fa7, #8ae0e6);
 }
 
 .extendButton {
-   @include background(#643aa7, #d78ae6);
+   @include buttonLayout(#643aa7, #d78ae6);
 }
 
 .mixinButton {
-   @include background(#641379, #aa6eb6);
+   @include buttonLayout(#641379, #aa6eb6);
    width: 23.5%;
 }
 
