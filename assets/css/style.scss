@@ -173,7 +173,7 @@ body {
 }
 
 %matchingButton {
-   width: 20%;
+   width: 8em;
    height: 4em;
    color: #ffffff;
    background: #95cce8;
@@ -195,6 +195,7 @@ body {
 .Flipped {
    width: 8em;
    height: 4em;
+   position: absolute;
 }
 
 // matching ends here
