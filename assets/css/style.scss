@@ -182,15 +182,17 @@ a {
   background: rgb(random(255), random(255), random(255));
 }
 
+.Flipped {
+   width: 8em;
+   height: 4em;
+   //position: absolute;
+}
+
 .Card {
    @extend %matchingButton;
    position: absolute;
 }
 
-.Flipped {
-   width: 8em;
-   height: 4em;
-   position: absolute;
-}
+
 
 // matching ends here
