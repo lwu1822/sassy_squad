@@ -67,16 +67,16 @@ a {
    border-radius: 2em;
 }
 
-.gettingStartedButton, .nestingButton, .extendButton, .mixinButton {
+.gettingStartedButton, .nestingButton, .extendButton, .mixinButton, .functionButton {
    @extend %buttonAnimation;
 }
 
 .gettingStartedButton {
-   @include buttonLayout(#1539db, #8a8ce6);
+   @include buttonLayout(#3a9fa7, #8ae0e6);
 }
 
 .nestingButton {
-   @include buttonLayout(#3a9fa7, #8ae0e6);
+   @include buttonLayout(#1539db, #8a8ce6);
 }
 
 .extendButton {
@@ -88,8 +88,9 @@ a {
    width: 23.5%;
 }
 
-.tempButton {
-   background: radial-gradient( #a73a95, #d78ae6);
+.functionButton {
+   @include buttonLayout(#a73a95, #d78ae6);
+   width: 23.5%;
 }
 
 //nesting.html styling
@@ -103,6 +104,21 @@ a {
       font-family: "Times New Roman", serif;
       font-size: 1em;
    }
+}
+
+
+//test
+body {
+   background-color: invert(white) !important;
+}
+
+@function invert($r, $g, $b) {
+   $newColor: rgb(255 - $r, 255 - $g, 255 - $b);
+   @return $newColor; 
+}
+
+.test {
+   color: invert(0, 0, 0);
 }
 
 

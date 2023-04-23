@@ -19,6 +19,7 @@ We will be teaching the **Scss** syntax because it is more commonly used.
 </div>
 <div class="flex" style="margin-top: 3em;">
     <button class="mixinButton" onclick="mixin()">Mixin</button>
+    <button class="functionButton" onclick="functionButton()">Function</button>
 </div>
 
 <br>
@@ -51,8 +52,11 @@ We will be teaching the **Scss** syntax because it is more commonly used.
         window.location.href = "{{ site.baseurl }}/extend";
     }
 
-
     function mixin() {
         window.location.href = "{{ site.baseurl }}/mixin";
+    }
+
+    function functionButton() {
+        window.location.href = "{{ site.baseurl }}/function";
     }
 </script>

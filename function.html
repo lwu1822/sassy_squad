@@ -1,0 +1,90 @@
+--- 
+layout: default
+--- 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+    <body>
+        <div class="header">sjldkfjsldkfja</div>
+
+        <div class="test">jfsldkfjalskdj;flsk</div>
+
+        <h1>Mixin</h1>
+
+        <p>Let's take a look at the buttons again.
+        </p>
+
+        <div class="flex">
+            <button class="gettingStartedButton" onclick="gettingStarted()">Getting started</button>
+            <button class="nestingButton" onclick="nesting()">Nesting</button>
+            <button class="extendButton" onclick="extend()">Extend/Inheritance</button>
+        </div>
+        
+        <br>
+
+        <p></p>
+
+        <p>Another way to code for the background is through the use of a mixin.</p>
+
+        <p>A mixin is similar to extend in that it creates a code template that can be reused.
+            It can also take in parameters so that you can create dynamic styling.
+        </p>
+   
+        <p>In the example of the buttons, all three buttons have a gradient background. However,
+            the background colors are different.
+        </p>
+
+        <p>With SASS, we can create a <code>@mixin</code> at rule that takes in two colors 
+        as the parameter:</p>
+
+        <pre>
+            <div class="whiteSpaceFormat">@mixin buttonLayout($innerColor, $outerColor) {</div>
+            <div class="whiteSpaceFormat">&#9;background: radial-gradient($innerColor, $outerColor);</div>
+            <div class="whiteSpaceFormat">}</div>
+        </pre>
+
+        <p>To call the mixin, create a selector and call the mixin using <code>@include</code>:</p>
+        <p>The code below sets the background color of the Getting Started button to a gradient blue.</p>
+
+        <pre>
+            <div class="whiteSpaceFormat">.gettingStartedButton {</div>
+            <div class="whiteSpaceFormat">&#9;@include buttonLayout(#1539db, #8a8ce6);</div>
+            <div class="whiteSpaceFormat">}</div>
+        </pre>
+
+        <br>
+        <p>In addition, you can also place styling rules that do not take in variables within
+        mixin.</p>
+        <p>The code below shows how to style the rest of the button within a mixin:</p>
+
+        <pre>
+            <div class="whiteSpaceFormat">@mixin buttonLayout($innerColor, $outerColor) {</div>
+            <div class="whiteSpaceFormat">&#9;background: radial-gradient($innerColor, $outerColor);</div>
+            <div class="whiteSpaceFormat">&#9;width: 15em;</div>
+            <div class="whiteSpaceFormat">&#9;height: 15em;</div>
+            <div class="whiteSpaceFormat">&#9;color: #ffffff;</div>
+            <div class="whiteSpaceFormat">&#9;margin-right: 10%;</div>
+            <div class="whiteSpaceFormat">&#9;border-radius: 2em;</div>
+            <div class="whiteSpaceFormat">}</div>
+        </pre>
+
+        <button class="backButton" style="margin-top: 3em;" onclick="sassHomepage()">Back</button>
+    </body>
+
+
+</html>
+
+
+<script>
+    function sassHomepage() {
+        window.location.href = "{{ site.baseurl }}/sass";
+    }
+
+    function change() {
+        document.getElementById("change").classList.remove("hiddenText");
+        document.getElementById("change").classList.add("showHiddenText");
+    }
+</script>
