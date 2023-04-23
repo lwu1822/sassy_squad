@@ -3,7 +3,7 @@ const iframe = document.querySelector("iframe");
 
 
 textbox.addEventListener('keyup',()=>{
-  updateCode();d
+  updateCode();
 })
 
 textbox.addEventListener("paste", function(e) {

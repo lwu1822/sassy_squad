@@ -1,4 +1,9 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
 # Creating a game using JavaScript
+
+
 
 This is the same idea as what we have always done for our projects.
 JavaScript is best for web-based and mobile games because it is generally easy to comprehend. 
@@ -10,6 +15,8 @@ JavaScript is best for web-based and mobile games because it is generally easy t
 To have a UI (User Interface), you will need to use HTML. We can put our JS file as a script in the html by using script tags or linking a file. Script tags are fine for simple pages, but become confusing if you are doing complicated JS like a large app. 
 
 **It looks like this**
+
+<iframe src="editors/HTMLeditor1.html" width="80%" height="400vh"></iframe>
 
 <img src="/imagessass/javainhtml.png" width="550" height="350">
 
