@@ -12,6 +12,17 @@ body {
    background-color: black;
 }
 
+pre {
+   background-color: #e0d5d5 !important; 
+   color: black !important;
+   white-space: pre-line !important;
+}
+
+pre > .whiteSpaceFormat {
+   white-space: pre !important;
+   line-height: 0.1em;
+}
+
 %buttonLayout {
    width: 15em;
    height: 20em;
@@ -39,6 +50,21 @@ body {
    @extend %buttonAnimation;
    background: radial-gradient( #643aa7, #d78ae6);
 }
+
+
+//nesting.html styling
+.font {
+   .title {
+      font-family: "Times New Roman", serif;
+      font-size: 3em;
+   }
+
+   .text {
+      font-family: "Times New Roman", serif;
+      font-size: 1em;
+   }
+}
+
 
 
 .btn {
