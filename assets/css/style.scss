@@ -167,7 +167,9 @@ body {
 // Kudos to https://marina-ferreira.github.io/tutorials/js/memory-game/. We wouldn't have gotten far without a tutorial.
 
 .box{
-  position: relative;
+   height: 4em;
+   width: 8em;
+   position: relative;
 }
 
 %matchingButton {
