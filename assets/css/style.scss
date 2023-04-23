@@ -5,6 +5,8 @@
 @use 'sass:list';
 
 //general dark theme settings
+$green: rgb(132, 214, 180);
+
 p {
    color: #d3caca;
 }
@@ -29,8 +31,12 @@ code {
 }
 
 a {
-   color: #d78ae6;
+   color: $green;
 }
+
+
+
+
 
 //sass.md settings
 %buttonLayout {
@@ -80,8 +86,8 @@ a {
 }
 
 
-
-.btn {
+//general button settings
+%btnLayout {
   font-size: 1rem;
   font-weight: 350;
   
@@ -94,10 +100,30 @@ a {
 
 }
 
-.btn:hover {
+.btn {
+   @extend %btnLayout;
+   @extend %btn; 
+}
+
+
+%btn:hover {
   transform: translateY(-10px);
   background-color: var(--clr-accent);
   color: var(--light);
+}
+
+.backButton {
+   @extend %btnLayout;
+   background-color: $green;
+   width: 5em;
+   height: 2em;
+   border-radius: 0.5em;
+   color: black;
+}
+
+.backButton:hover {
+   color: rgb(65, 63, 63);
+   transform: translateY(-10px);
 }
 
 

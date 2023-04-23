@@ -32,8 +32,18 @@ layout: default
              very bottom to see the SASS code that you wrote, which is in the form of CSS.</p>
 
         <img src="imagessass/stylecssFile.jpg" alt="style.css file">
+
+        <br>
+
+        <button class="backButton" style="margin-top: 3em;" onclick="sassHomepage()">Back</button>
     </body>
 
 
 </html>
 
+
+<script>
+    function sassHomepage() {
+        window.location.href = "{{ site.baseurl }}/sass";
+    }
+</script>
