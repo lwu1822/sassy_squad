@@ -13,8 +13,16 @@ We will be teaching the **Scss** syntax because it is more commonly used.
 <br>
 
 <div class="flex">
+    <button class="gettingStartedButton" onclick="gettingStarted()">Getting started</button>
     <button class="nestingButton" onclick="nesting()">Nesting</button>
     <button class="mixinButton" onclick="mixin()">Mixin</button>
+</div>
+<div class="flex">
+<!--
+    <button class="gettingStartedButton" onclick="nesting()">Nesting</button>
+    <button class="nestingButton" onclick="nesting()">Nesting</button>
+    <button class="mixinButton" onclick="mixin()">Mixin</button>
+    -->
 </div>
 
 <br>
@@ -35,6 +43,10 @@ We will be teaching the **Scss** syntax because it is more commonly used.
 
 
 <script>
+    function gettingStarted() {
+        window.location.href = "{{ site.baseurl }}/gettingstarted";
+    }
+
     function nesting() {
         window.location.href = "{{ site.baseurl }}/nesting";
     }

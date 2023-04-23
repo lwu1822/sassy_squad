@@ -1,0 +1,75 @@
+--- 
+layout: default
+--- 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+    <body>
+        <h1>Nesting</h1>
+
+        <p>While writing CSS, you may notice that many selectors share the same element. </p>
+        <p>For example, let's say you have a div element that controls the font. Inside the div element, you have two other divs that control the font size.</p>
+        <p>Your CSS code might look this: </p>
+
+        <pre>
+            <div class="whiteSpaceFormat">.font .title { </div>
+            <div class="whiteSpaceFormat">&#9;font-family: "Times New Roman", serif; </div>
+            <div class="whiteSpaceFormat">&#9;font-size: 3em;</div>
+            <div class="whiteSpaceFormat">}</div>
+            <div class="whiteSpaceFormat" style="margin-top: 2em;">.font .text {</div>
+            <div class="whiteSpaceFormat">&#9;font-family: "Times New Roman", serif; </div>
+            <div class="whiteSpaceFormat">&#9;font-size: 1em;</div>
+            <div class="whiteSpaceFormat">}</div>
+        </pre>
+
+        <p>SASS provides a feature called nesting in which you can write styling code in a way that looks like 
+            an HTML hierarchy.
+        </p>
+
+        <p>The SASS equivalent for the CSS code above would be:</p>
+
+        <pre>
+            <div class="whiteSpaceFormat">.font {</div>
+            <div class="whiteSpaceFormat">&#9;.title {</div>
+            <div class="whiteSpaceFormat">&#9;font-family: "Times New Roman", serif;</div>
+            <div class="whiteSpaceFormat">&#9;font-size: 3em;</div>
+            <div class="whiteSpaceFormat" style="margin-top: 2em;">&#9;.text {</div>
+            <div class="whiteSpaceFormat">&#9;font-family: "Times New Roman", serif;</div>
+            <div class="whiteSpaceFormat">&#9;font-size: 1em;/div>
+            <div class="whiteSpaceFormat">}</div>
+            <div class="whiteSpaceFormat">}</div>
+        </pre>
+
+        <p>Below is an example of HTML using the SASS code and its output:</p>
+
+        <pre>
+            <div class="whiteSpaceFormat">&lt;div class="font"&gt;</div>
+            <div class="whiteSpaceFormat">&#9;&lt;div class="title"&gt;</div>
+            <div class="whiteSpaceFormat">&#9;&lt;p&gt;Title&lt;/p&gt;</div>
+            <div class="whiteSpaceFormat">&#9;&lt;/div&gt;</div>
+            <div class="whiteSpaceFormat" style="margin-top: 2em;">&#9;&lt;div class="text"&gt;</div>
+            <div class="whiteSpaceFormat">&#9;&lt;p&gt;This is some text&lt;/p&gt;</div>
+            <div class="whiteSpaceFormat">&#9;&lt;/div&gt;</div>
+            <div class="whiteSpaceFormat">&lt;/div&gt;</div>
+        </pre>
+        
+        <br>
+
+        <p>(Output using the SASS and HTML code above)</p>
+
+        <div class="font">
+            <div class="title">
+                <p>Title</p>
+            </div>
+            <div class="text">
+                <p>This is some text</p>
+            </div>
+        </div>
+    </body>
+
+
+</html>
+

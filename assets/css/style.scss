@@ -4,6 +4,7 @@
 @import 'jekyll-theme-cayman';
 @use 'sass:list';
 
+//general dark theme settings
 p {
    color: #d3caca;
 }
@@ -23,9 +24,10 @@ pre > .whiteSpaceFormat {
    line-height: 0.1em;
 }
 
+//sass.md settings
 %buttonLayout {
    width: 15em;
-   height: 20em;
+   height: 15em;
    color: #ffffff; 
    margin-right: 10%;
 }
@@ -38,16 +40,20 @@ pre > .whiteSpaceFormat {
    display: flex; 
 }
 
-.nestingButton {
+.gettingStartedButton, .nestingButton, .mixinButton {
    @extend %buttonLayout;
    @extend %buttonAnimation;
+}
+
+.gettingStartedButton {
+   background: radial-gradient( #1539db, #8a8ce6);
+}
+
+.nestingButton {
    background: radial-gradient( #3a9fa7, #8ae0e6);
 }
 
-
 .mixinButton {
-   @extend %buttonLayout;
-   @extend %buttonAnimation;
    background: radial-gradient( #643aa7, #d78ae6);
 }
 
