@@ -166,12 +166,18 @@ a {
 }
 
 
-// matching stuff here
+// matching starts here
 // Kudos to https://marina-ferreira.github.io/tutorials/js/memory-game/. We wouldn't have gotten far without a tutorial.
 
-.MemBoard{
-  height: 100vh;
-  width: 100vw;
+.board{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.box{
+   height: 4em;
+   width: 8em;
+   position: relative;
 }
 
 %matchingButton {
@@ -190,7 +196,14 @@ a {
 }
 
 .Card {
-       @extend %matchingButton;
+   @extend %matchingButton;
+   position: absolute;
+}
+
+.Flipped {
+   width: 8em;
+   height: 4em;
+   position: absolute;
 }
 
 // matching ends here

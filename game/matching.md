@@ -8,39 +8,128 @@ Kudos to this [guide](https://marina-ferreira.github.io/tutorials/js/memory-game
 
 
 <body class="MemBoard">
-  <br>
+  <section class="board">
 
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-  <button class="Card"></button>
-
-  <br>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color1.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color1.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color2.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color2.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color3.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color3.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color4.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color4.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color5.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color5.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color6.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color6.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color7.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color7.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color8.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color8.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color9.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color9.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color10.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color10.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color11.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color11.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color12.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color12.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color13.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color13.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color14.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color14.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color15.PNG">
+    </div>
+    <div class="box">
+      <button class="Card"></button>
+        <img class="Flipped" src="img/color15.PNG">
+    </div>
+  </section>
 
 </body>
