@@ -6,9 +6,10 @@
 
 //general dark theme settings
 $green: rgb(132, 214, 180);
+$fontColor: #d3caca;
 
 p {
-   color: #d3caca;
+   color: $fontColor;
 }
 
 body {
@@ -34,6 +35,16 @@ a {
    color: $green;
 }
 
+
+.hiddenText {
+   background-color: rgb(112, 110, 110);
+   color: rgb(112, 110, 110); 
+}
+
+.showHiddenText {
+   background-color: black;
+   color: $fontColor;
+}
 
 
 

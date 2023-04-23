@@ -15,7 +15,7 @@ We will be teaching the **Scss** syntax because it is more commonly used.
 <div class="flex">
     <button class="gettingStartedButton" onclick="gettingStarted()">Getting started</button>
     <button class="nestingButton" onclick="nesting()">Nesting</button>
-    <button class="mixinButton" onclick="mixin()">Mixin</button>
+    <button class="mixinButton" onclick="extend()">Extend/Inheritance</button>
 </div>
 <div class="flex">
 <!--
@@ -51,7 +51,7 @@ We will be teaching the **Scss** syntax because it is more commonly used.
         window.location.href = "{{ site.baseurl }}/nesting";
     }
     
-    function mixin() {
-        window.location.href = "{{ site.baseurl }}/mixin";
+    function extend() {
+        window.location.href = "{{ site.baseurl }}/extend";
     }
 </script>
