@@ -107,19 +107,22 @@ a {
 }
 
 
-//test
-body {
-   background-color: invert(white) !important;
-}
-
-@function invert($r, $g, $b) {
+//function.html styling
+@function sassInvert($r, $g, $b) {
    $newColor: rgb(255 - $r, 255 - $g, 255 - $b);
    @return $newColor; 
 }
 
-.test {
-   color: invert(0, 0, 0);
+.bodyInvert {
+   background-color: sassInvert(0, 0, 0);
 }
+
+.invert p {
+   background-color: sassInvert(0, 0, 0);
+   color: sassInvert(211,202,202);
+}
+
+
 
 
 //general button settings
