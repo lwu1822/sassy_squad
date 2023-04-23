@@ -15,14 +15,10 @@ We will be teaching the **Scss** syntax because it is more commonly used.
 <div class="flex">
     <button class="gettingStartedButton" onclick="gettingStarted()">Getting started</button>
     <button class="nestingButton" onclick="nesting()">Nesting</button>
-    <button class="mixinButton" onclick="extend()">Extend/Inheritance</button>
+    <button class="extendButton" onclick="extend()">Extend/Inheritance</button>
 </div>
-<div class="flex">
-<!--
-    <button class="gettingStartedButton" onclick="nesting()">Nesting</button>
-    <button class="nestingButton" onclick="nesting()">Nesting</button>
+<div class="flex" style="margin-top: 3em;">
     <button class="mixinButton" onclick="mixin()">Mixin</button>
-    -->
 </div>
 
 <br>

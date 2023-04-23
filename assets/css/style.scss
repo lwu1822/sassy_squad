@@ -65,7 +65,7 @@ a {
    display: flex; 
 }
 
-.gettingStartedButton, .nestingButton, .mixinButton {
+.gettingStartedButton, .nestingButton, .extendButton, .mixinButton {
    @extend %buttonLayout;
    @extend %buttonAnimation;
 }
@@ -78,10 +78,18 @@ a {
    background: radial-gradient( #3a9fa7, #8ae0e6);
 }
 
-.mixinButton {
+.extendButton {
    background: radial-gradient( #643aa7, #d78ae6);
 }
 
+.mixinButton {
+   background: radial-gradient( #641379, #aa6eb6);
+   width: 23.5%;
+}
+
+.tempButton {
+   background: radial-gradient( #a73a95, #d78ae6);
+}
 
 //nesting.html styling
 .font {
