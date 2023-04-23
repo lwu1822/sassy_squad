@@ -37,80 +37,36 @@ layout: default
         as the parameter:</p>
 
         <pre>
-            <div class="whiteSpaceFormat">%<em>class-name</em> { </div>
+            <div class="whiteSpaceFormat">@mixin buttonLayout($innerColor, $outerColor) {</div>
+            <div class="whiteSpaceFormat">&#9;background: radial-gradient($innerColor, $outerColor);</div>
             <div class="whiteSpaceFormat">}</div>
         </pre>
 
-        <div class="hiddenText" id="change" onclick="change()">The buttons have the same
-            width and height, font color, and spacing between each button. They have 
-            a different background color.
-        </div>
-
-        <p>If we were to write it out in CSS, we would need to specify these properties for
-             each button selector. </p>
-
-        <p>With SASS, we can create a placeholder class that stores the code we want 
-            to reuse. A placeholder class looks like this:
-        </p>
+        <p>To call the mixin, create a selector and call the mixin using <code>@include</code>:</p>
+        <p>The code below sets the background color of the Getting Started button to a gradient blue.</p>
 
         <pre>
-            <div class="whiteSpaceFormat">%<em>class-name</em> { </div>
+            <div class="whiteSpaceFormat">.gettingStartedButton {</div>
+            <div class="whiteSpaceFormat">&#9;@include buttonLayout(#1539db, #8a8ce6);</div>
             <div class="whiteSpaceFormat">}</div>
         </pre>
 
         <br>
-        <p>For example, to specify the width, height, font color, and spacing for each
-            button, we can create a placeholder class called <code>%buttonLayout</code>
-            and write our styling in there.
-        </p>
+        <p>In addition, you can also place styling rules that do not take in variables within
+        mixin.</p>
+        <p>The code below shows how to style the rest of the button within a mixin:</p>
 
         <pre>
-            <div class="whiteSpaceFormat">%buttonLayout {</div>
+            <div class="whiteSpaceFormat">@mixin buttonLayout($innerColor, $outerColor) {</div>
+            <div class="whiteSpaceFormat">&#9;background: radial-gradient($innerColor, $outerColor);</div>
             <div class="whiteSpaceFormat">&#9;width: 15em;</div>
             <div class="whiteSpaceFormat">&#9;height: 15em;</div>
             <div class="whiteSpaceFormat">&#9;color: #ffffff;</div>
             <div class="whiteSpaceFormat">&#9;margin-right: 10%;</div>
+            <div class="whiteSpaceFormat">&#9;border-radius: 2em;</div>
             <div class="whiteSpaceFormat">}</div>
         </pre>
 
-
-        <p><code>%buttonLayout</code> is like a template for the specific buttons that
-        we want to make.</p>
-        
-        <br>
-        <p>A selector needs to be created for each button. Code from the placeholder
-            class can be called with <code>@extend %<em>class-name</em></code></p>
-        
-        <p>This is what the code looks like for the buttons:</p>
-
-
-        <pre>
-            <div class="whiteSpaceFormat">.gettingStartedButton, .nestingButton, .extendButton {</div>
-            <div class="whiteSpaceFormat">&#9;@extend %buttonLayout;</div>
-            <div class="whiteSpaceFormat">}</div>
-        </pre>
-
-        <br>
-
-        <p>At the moment, each button has the same styling. However, we can still customize each
-            one to make them unqiue. Since each button has a different background color, we need 
-            to individually code the background color within each selector:
-        </p>
-
-
-        <pre>
-            <div class="whiteSpaceFormat">.gettingStartedButton {</div>
-            <div class="whiteSpaceFormat">&#9;background: radial-gradient( #1539db, #8a8ce6);</div>
-            <div class="whiteSpaceFormat">}</div>
-            <div class="whiteSpaceFormat" style="margin-top: 2em;">.nestingButton {</div>
-            <div class="whiteSpaceFormat">&#9;background: radial-gradient( #3a9fa7, #8ae0e6);</div>
-            <div class="whiteSpaceFormat">}</div>
-            <div class="whiteSpaceFormat" style="margin-top: 2em;">.extendButton {</div>
-            <div class="whiteSpaceFormat">&#9;background: radial-gradient( #643aa7, #d78ae6);</div>
-            <div class="whiteSpaceFormat">}</div>
-        </pre>
-   
-   
         <button class="backButton" style="margin-top: 3em;" onclick="sassHomepage()">Back</button>
     </body>
 
