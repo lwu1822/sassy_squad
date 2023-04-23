@@ -2,72 +2,36 @@
 layout: default
 --- 
 
-
 <!DOCTYPE html>
 <html>
 <head>
 </head>
     <body>
-        <h1>Nesting</h1>
+        <h1>Getting Started</h1>
 
-        <p>While writing CSS, you may notice that many selectors share the same element. </p>
-        <p>For example, let's say you have a div element that controls the font. Inside the div element, you have two other divs that control the font size.</p>
-        <p>Your CSS code might look this: </p>
-
-        <pre>
-            <div class="whiteSpaceFormat">.font .title { </div>
-            <div class="whiteSpaceFormat">&#9;font-family: "Times New Roman", serif; </div>
-            <div class="whiteSpaceFormat">&#9;font-size: 3em;</div>
-            <div class="whiteSpaceFormat">}</div>
-            <div class="whiteSpaceFormat" style="margin-top: 2em;">.font .text {</div>
-            <div class="whiteSpaceFormat">&#9;font-family: "Times New Roman", serif; </div>
-            <div class="whiteSpaceFormat">&#9;font-size: 1em;</div>
-            <div class="whiteSpaceFormat">}</div>
-        </pre>
-
-        <p>SASS provides a feature called nesting in which you can write styling code in a way that looks like 
-            an HTML hierarchy.
+        <p>A easy way to write SASS and have it preprocessed into CSS is by using a Jekyll
+            powered website, such as GitHub pages or Fastpages.
         </p>
+        <p>The first step is to clone a GitHub pages repo, such as this <a href="https://github.com/lwu1822/sassy_squad">one.</a></p>
+        <p>Within the repository, head over to <code>assets/css/</code>, and open <code>style.scss</code>.</p>
 
-        <p>The SASS equivalent for the CSS code above would be:</p>
-
-        <pre>
-            <div class="whiteSpaceFormat">.font {</div>
-            <div class="whiteSpaceFormat">&#9;.title {</div>
-            <div class="whiteSpaceFormat">&#9;font-family: "Times New Roman", serif;</div>
-            <div class="whiteSpaceFormat">&#9;font-size: 3em;</div>
-            <div class="whiteSpaceFormat" style="margin-top: 2em;">&#9;.text {</div>
-            <div class="whiteSpaceFormat">&#9;font-family: "Times New Roman", serif;</div>
-            <div class="whiteSpaceFormat">&#9;font-size: 1em;/div>
-            <div class="whiteSpaceFormat">}</div>
-            <div class="whiteSpaceFormat">}</div>
-        </pre>
-
-        <p>Below is an example of HTML using the SASS code and its output:</p>
-
-        <pre>
-            <div class="whiteSpaceFormat">&lt;div class="font"&gt;</div>
-            <div class="whiteSpaceFormat">&#9;&lt;div class="title"&gt;</div>
-            <div class="whiteSpaceFormat">&#9;&lt;p&gt;Title&lt;/p&gt;</div>
-            <div class="whiteSpaceFormat">&#9;&lt;/div&gt;</div>
-            <div class="whiteSpaceFormat" style="margin-top: 2em;">&#9;&lt;div class="text"&gt;</div>
-            <div class="whiteSpaceFormat">&#9;&lt;p&gt;This is some text&lt;/p&gt;</div>
-            <div class="whiteSpaceFormat">&#9;&lt;/div&gt;</div>
-            <div class="whiteSpaceFormat">&lt;/div&gt;</div>
-        </pre>
-        
         <br>
+        <img src="imagessass/stylescssLocation.jpg" alt="style.scss location">
 
-        <p>(Output using the SASS and HTML code above)</p>
+        <br>
+        <p>The file looks something like this:</p>
 
-        <div class="font">
-            <div class="title">
-                <p>Title</p>
-            </div>
-            <div class="text">
-                <p>This is some text</p>
-            </div>
-        </div>
+        <img src="imagessass/stylescssFile.jpg" alt="style.scss file">
+        <p>This is where you can create your SASS code.</p>
+
+        <br>
+        <p>To see your CSS-translated SASS code, head over to <code>_site/assets/css/style.css</code></p>
+        <p><strong>Note:</strong> You will need to run <code>bundle exec jekyll serve</code> before 
+            the <code>_site</code> directory appears.</p>
+        <p>The first few hundred lines are used to style Github's theme. Make sure to scroll to the
+             very bottom to see the SASS code that you wrote, which is in the form of CSS.</p>
+
+        <img src="imagessass/stylecssFile.jpg" alt="style.css file">
     </body>
 
 

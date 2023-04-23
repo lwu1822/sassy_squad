@@ -24,6 +24,14 @@ pre > .whiteSpaceFormat {
    line-height: 0.1em;
 }
 
+code {
+   color: black !important;
+}
+
+a {
+   color: #d78ae6;
+}
+
 //sass.md settings
 %buttonLayout {
    width: 15em;
