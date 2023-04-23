@@ -65,25 +65,29 @@ a {
    display: flex; 
 }
 
+@mixin background($innerColor, $outerColor) {
+   background: radial-gradient($innerColor, $outerColor);
+}
+
 .gettingStartedButton, .nestingButton, .extendButton, .mixinButton {
    @extend %buttonLayout;
    @extend %buttonAnimation;
 }
 
 .gettingStartedButton {
-   background: radial-gradient( #1539db, #8a8ce6);
+   @include background(#1539db, #8a8ce6);
 }
 
 .nestingButton {
-   background: radial-gradient( #3a9fa7, #8ae0e6);
+   @include background(#3a9fa7, #8ae0e6);
 }
 
 .extendButton {
-   background: radial-gradient( #643aa7, #d78ae6);
+   @include background(#643aa7, #d78ae6);
 }
 
 .mixinButton {
-   background: radial-gradient( #641379, #aa6eb6);
+   @include background(#641379, #aa6eb6);
    width: 23.5%;
 }
 

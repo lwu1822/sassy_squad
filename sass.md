@@ -50,4 +50,9 @@ We will be teaching the **Scss** syntax because it is more commonly used.
     function extend() {
         window.location.href = "{{ site.baseurl }}/extend";
     }
+
+
+    function mixin() {
+        window.location.href = "{{ site.baseurl }}/mixin";
+    }
 </script>
