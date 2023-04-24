@@ -23,26 +23,30 @@ To have a UI (User Interface), you will need to use HTML. We can put our JS file
 
 <iframe src="editors/HTMLeditor1.html" width="80%" height="400vh"></iframe>
 
-<img src="imagessass/javainhtml.png" width="550" height="350">
+<!--<img src="imagessass/javainhtml.png" width="550" height="350">-->
 
-Note: These are test:
-<img src="imagessass/javainhtml.png" width="550" height="350">
 
 ![]("imagessass/javainhtml.png")
 
 <h1>Where do you store the JavaScript Code?</h1>
 
 1. You could have a separate JavaScript file full of your JavaScript code. The filename will end in .js
-<img src="imagessass/jsfile.png" width="650" height="400">
+<!-- <img src="imagessass/jsfile.png" width="650" height="400"> -->
 
+![]("imagessass/jsfile.png")
 
     *Connect the JS file*: To point to your external JavaScript file, or connect the code to your HTML frontend, you could paste this *src Attribute* inside the body of the html. 
 
-<img src="/imagessass/jsfileinhtml.png" width="650" height="550">
+<!-- <img src="/imagessass/jsfileinhtml.png" width="650" height="550"> -->
+
+![]("imagessass/jsfileinhtml.png")
 
 - This one is shown in line 38.
 
-<img src="/imagessass/importjsfile.png" width="550" height="350">
+<!-- <img src="/imagessass/importjsfile.png" width="550" height="350"> -->
+
+![]("imagessass/importjsfile.png")
+
 
 2. Alternatively, you could write all of your JavaScript code in your HTML page using a *Script container*.
 
@@ -54,7 +58,10 @@ Note: These are test:
 1. Create a .scss file at the same root level as your index.html file, make sure the file name ends in .scss This will be your SASS file.
 
     *Connect the JS file*: To import the styling that you set up in that file, import a *link container* with "rel=stylesheet" and "href=filename.css". Make sure to close the link tag. 
-    <img src="imagessass/importsass.png" width="800" height="300">
+    <!-- <img src="imagessass/importsass.png" width="800" height="300"> -->
+
+![]("imagessass/importsass.png")
+
     - This one is shown in line 28.
 
 # Basic JavaScript Knowledge
