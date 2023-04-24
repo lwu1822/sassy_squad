@@ -18,12 +18,12 @@ To have a UI (User Interface), you will need to use HTML. We can put our JS file
 
 <iframe src="editors/HTMLeditor1.html" width="80%" height="400vh"></iframe>
 
-<img src="/imagessass/javainhtml.png" width="550" height="350">
+<img src="imagessass/javainhtml.png" width="550" height="350">
 
 # Where do you store the JavaScript Code?
 
 1. You could have a separate JavaScript file full of your JavaScript code. The filename will end in .js
-<img src="/imagessass/jsfile.png" width="650" height="400">
+<img src="imagessass/jsfile.png" width="650" height="400">
 
 
     *Connect the JS file*: To point to your external JavaScript file, or connect the code to your HTML frontend, you could paste this *src Attribute* inside the body of the html. 
@@ -43,7 +43,7 @@ To have a UI (User Interface), you will need to use HTML. We can put our JS file
 1. Create a .scss file at the same root level as your index.html file, make sure the file name ends in .scss This will be your SASS file.
 
     *Connect the JS file*: To import the styling that you set up in that file, import a *link container* with "rel=stylesheet" and "href=filename.css". Make sure to close the link tag. 
-    <img src="/imagessass/importsass.png" width="800" height="300">
+    <img src="imagessass/importsass.png" width="800" height="300">
     - This one is shown in line 28.
 
 # Basic JavaScript Knowledge
