@@ -33,10 +33,10 @@ To have a UI (User Interface), you will need to use HTML. We can put our JS file
 
     *Connect the JS file*: To point to your external JavaScript file, or connect the code to your HTML frontend, you could paste this *src Attribute* inside the body of the html. 
 
-    <img src="/imagessass/jsfileinhtml.png" width="650" height="550">
+<img src="/imagessass/jsfileinhtml.png" width="650" height="550">
     - This one is shown in line 38.
 
-    <img src="/imagessass/importjsfile.png" width="550" height="350">
+<img src="/imagessass/importjsfile.png" width="550" height="350">
 
 2. Alternatively, you could write all of your JavaScript code in your HTML page using a *Script container*.
 
