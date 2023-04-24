@@ -17,10 +17,7 @@
             const textbox = document.querySelector(".textbox");
             const htmlholder = document.querySelector(".htmlholder");
             textbox.textContent = 'function buttonFunction() { \n' +
-            '    function add(num1, num2) { \n' +
-            '        return num1 * num2;\n' +
-            '    }\n' +
-            '    document.querySelector(\".output\").innerHTML = add(2, 5);' + 
+            '    document.querySelector(\".output\").innerHTML = "";\n' +
             "}"
             htmlholder.value = "<h2>Click to run</h2> <button id=\"button\" onclick=\"buttonFunction()\">Click me</button> <h2>Output</h2><p1 class=\"output\"></p1>" //HTML
             updateCode();
