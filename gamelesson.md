@@ -58,6 +58,12 @@ To have a UI (User Interface), you will need to use HTML. We can put our JS file
 5. checkMatch: checks for a match of the two flipped cards
 6. resetBoard: resets the board after each two flipped cards so there is a new "first card" and "second card"
 7. shuffle: shuffles the cards on the board
+3. flipCard: flips card as you check for matches 
+4. unFlipCard: unflips when you do not find a match
+5. disableCard: does not allow other cards to be flipped if 2 cards are already flipped over
+5. checkMatch: checks for a match between the two cards you flipped
+6. resetBoard: first card and second card changes after each turn of flipping 2 cards, the board is then reset
+7. shuffle: shuffles the places of the cards 
 
 <h1>Creating the Memory Game</h1>
 Step 1 - <mark>Create a Repository and open in your code editor</mark>
@@ -106,12 +112,127 @@ Step 4 - <mark>Setting up the Board Style</mark> Board CSS
     1. Add a transform property with scale of (0.97)
     2. Add a transition property with "transform .2s"
 6. .memory-card.flip
-    1. transform: rotateY(180deg)
+    1. add a transform property set to rotateY(180deg)
+<pre><code>* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: ___;
+  display: flex;
+  background: ___;
+}
+
+.memory-game {
+  width: ___px;
+  height: ____px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: ____px;
+}
+
+.memory-card {
+  width: calc(___% - ___px);
+  height: calc(___% - ___px);
+  margin: ___px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: ___px;
+  position: absolute;
+  border-radius: ___px;
+  background: #___;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+</code></pre>
 
 
-Step 5 - <mark>Card Flip in JavaScript</mark>
-1. Make a list of all memory card elements, stored in a constant. 
-2. Loop through the list, and attach an event listener which looks out for a click event. When the event occurs, is clicked, the function will occur. 
 
+Step 5 - <mark>Functions in JavaScript file</mark>
+1. Make a list of all memory card elements, stored in a constant. <pre><code>const cards = document.querySelectorAll('.memory-card');</code></pre>
+2. Set these variables 
+    - "let hasFlippedCard = false;
+    - let lockBoard = false;
+    - let firstCard, secondCard;"
+3. Loop through the list, and attach an event listener which looks out for a click event. When the event occurs, is clicked, the function will occur. 
+4. Here add your flipCard, unflipCard, checkMatch, disableCards, resetBoard, and shuffle functions.
+<pre><code>function flipCard() {
+  if (lockBoard) return;
+  if (this === firstCard) return;
 
+  this.classList.add('flip');
+
+  if (!hasFlippedCard) {
+    hasFlippedCard = true;
+    firstCard = this;
+
+    return;
+  }
+
+  secondCard = this;
+  checkForMatch();
+}
+
+function checkForMatch() {
+  let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+
+  isMatch ? disableCards() : unflipCards();
+}
+
+function disableCards() {
+  firstCard.removeEventListener('click', flipCard);
+  secondCard.removeEventListener('click', flipCard);
+
+  resetBoard();
+}
+
+function unflipCards() {
+  lockBoard = true;
+
+  setTimeout(() => {
+    firstCard.classList.remove('flip');
+    secondCard.classList.remove('flip');
+
+    resetBoard();
+  }, 1500);
+}
+
+function resetBoard() {
+  [hasFlippedCard, lockBoard] = [false, false];
+  [firstCard, secondCard] = [null, null];
+}
+
+(function shuffle() {
+  cards.forEach(card => {
+    let randomPos = Math.floor(Math.random() * 12);
+    card.style.order = randomPos;
+  });
+})();
+
+cards.forEach(card => card.addEventListener('click', flipCard));
+</code></pre>
 
