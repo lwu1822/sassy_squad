@@ -213,7 +213,7 @@ a {
    }
 }
 
-.whysass {
+.whySass {
    animation-name: slideInLeft;
    animation-duration: 2s;
    animation-timing-function: ease;
@@ -222,9 +222,19 @@ a {
    animation-fill-mode: both;
 }
 
-.sassvsscss {
+.sassvSscss {
    animation-name: slideInRight;
    animation-duration: 2s;
+   animation-timing-function: ease;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-fill-mode: both;
+}
+
+.sassTopic {
+   animation-name: slideInLeft;
+   animation-duration: 2s;
+   animation-delay: 0.5s;
    animation-timing-function: ease;
    animation-iteration-count: 1;
    animation-direction: normal;
