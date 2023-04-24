@@ -53,7 +53,7 @@ To have a UI (User Interface), you will need to use HTML. We can put our JS file
 4. Iteration
 5. Functions
 
-# JavaScript Functions
+# JavaScript Functions/code in the Memory Game
 1. buttons
 2. onclick
 3. flipCard
@@ -90,12 +90,15 @@ Step 4 - <mark>Setting up the Board Style</mark> Board CSS
     add a position property set to relative
 2. body container
     1. to center the board in the middle of the page, in a body container add display property with flex. 
-    3. .memory-card container
-    5. add a border property in the .memory-card container
-    6. add height and width properties to the .memory-card container
-    7. To align the front and back faces of the card, in the .front-face, .back-face container add a position property with value absolute so the element is positioned relative to the 
+    2. add a height property 
+3. .memory-card container
+    1. add a border property with pixel and color details 
+    2. add height and width properties 
+    3. 
+4. .front-face and .back-face container
+    1. To align the front and back faces of the card add a position property with value absolute so the element is positioned relative to the 
 3. .memory-card:active (for the click affect)
-
+    1. add a transform property with scale
 add a transform scale 
 
 
