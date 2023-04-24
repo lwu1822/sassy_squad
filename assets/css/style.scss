@@ -222,20 +222,9 @@ a {
    animation-fill-mode: both;
 }
 
-.sassvsScss {
+.slideInRight {
    animation-name: slideInRight;
    animation-duration: 2s;
-   animation-delay: 0.1s;
-   animation-timing-function: ease;
-   animation-iteration-count: 1;
-   animation-direction: normal;
-   animation-fill-mode: both;
-}
-
-.sassTopic {
-   animation-name: slideInLeft;
-   animation-duration: 2s;
-   animation-delay: 0.2s;
    animation-timing-function: ease;
    animation-iteration-count: 1;
    animation-direction: normal;
