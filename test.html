@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.11.1/sass.min.js"></script>
+  </head>
+  <body>
+    <textarea id="sassCode" rows="10" cols="50">$primary-color: #333; body { color: $primary-color; }</textarea><br />
+    <button id="convertButton">Convert</button><br />
+    <textarea id="cssOutput" rows="10" cols="50"></textarea>
+
+    <script>
+      const convertButton = document.getElementById('convertButton');
+      const sassCode = document.getElementById('sassCode');
+      const cssOutput = document.getElementById('cssOutput');
+
+      convertButton.addEventListener('click', () => {
+        print(Sass)
+        Sass.compile(sassCode.value, function(result) {
+          cssOutput.value = result.text;
+        });
+      });
+    </script>
+  </body>
+</html>

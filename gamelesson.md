@@ -39,7 +39,8 @@ Note: These are test:
     *Connect the JS file*: To point to your external JavaScript file, or connect the code to your HTML frontend, you could paste this *src Attribute* inside the body of the html. 
 
 <img src="/imagessass/jsfileinhtml.png" width="650" height="550">
-    - This one is shown in line 38.
+
+- This one is shown in line 38.
 
 <img src="/imagessass/importjsfile.png" width="550" height="350">
 
@@ -56,21 +57,17 @@ Note: These are test:
     <img src="imagessass/importsass.png" width="800" height="300">
     - This one is shown in line 28.
 
-# JavaScript Functions/code in the Memory Game
-1. buttons: The memory cards are buttons which are shown in buttons tags in HTML. It has a onClick attribute for the actual function to work.
-2. onclick: occurs when the user clicks on an HTML element, usually a button, and executes the function
-3. flipCard: flips over the card the user clicks on 
-4. unFlipCard: flips the card over when there is no match
-5. disableCard: does not allow other cards to be flipped over when 2 are already flipped and unmatched
-5. checkMatch: checks for a match of the two flipped cards
-6. resetBoard: resets the board after each two flipped cards so there is a new "first card" and "second card"
-7. shuffle: shuffles the cards on the board
-3. flipCard: flips card as you check for matches 
-4. unFlipCard: unflips when you do not find a match
-5. disableCard: does not allow other cards to be flipped if 2 cards are already flipped over
-5. checkMatch: checks for a match between the two cards you flipped
-6. resetBoard: first card and second card changes after each turn of flipping 2 cards, the board is then reset
-7. shuffle: shuffles the places of the cards 
+# Basic JavaScript Knowledge
+1. Variables
+<iframe src="editors/JSeditor1.html" width="100%" height="400vh"></iframe>
+2. Data types
+<iframe src="editors/JSeditor2.html" width="100%" height="400vh"></iframe>
+3. Conditionals
+<iframe src="editors/JSeditor3.html" width="100%" height="400vh"></iframe>
+4. Iteration
+<iframe src="editors/JSeditor4.html" width="100%" height="400vh"></iframe>
+5. Functions
+<iframe src="editors/JSeditor5.html" width="100%" height="400vh"></iframe>
 
 <h1>Creating the Memory Game</h1>
 Step 1 - <mark>Create a Repository and open in your code editor</mark>
