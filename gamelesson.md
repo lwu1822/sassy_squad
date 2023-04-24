@@ -173,11 +173,13 @@ body {
 
 
 Step 5 - <mark>Functions in JavaScript file</mark>
-1. Make a list of all memory card elements, stored in a constant. <pre><code>const cards = document.querySelectorAll('.memory-card');</code></pre>
+1. Make a list of all memory card elements, stored in a constant. 
+<pre><code>const cards = document.querySelectorAll('.memory-card');</code></pre>
 2. Set these variables 
-    - "let hasFlippedCard = false;
-    - let lockBoard = false;
-    - let firstCard, secondCard;"
+<pre><code>let hasFlippedCard = false;
+let lockBoard = false;
+let firstCard, secondCard;"</code></pre>
+
 3. Loop through the list, and attach an event listener which looks out for a click event. When the event occurs, is clicked, the function will occur. 
 4. Here add your flipCard, unflipCard, checkMatch, disableCards, resetBoard, and shuffle functions.
 <pre><code>function flipCard() {
