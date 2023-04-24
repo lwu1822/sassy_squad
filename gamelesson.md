@@ -6,7 +6,9 @@
 
 <h1>Creating a game using JavaScript</h1>
 
+Jupyter Notebook with basic knowledge of JavaScript 
 
+In terminal, run "wget https://raw.githubusercontent.com/lwu1822/sassy_squad/gh-pages/JSlesson.ipynb"
 
 This is the same idea as what we have always done for our projects.
 JavaScript is best for web-based and mobile games because it is generally easy to comprehend. 
