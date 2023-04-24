@@ -1,17 +1,16 @@
 <div class="whysass">
-
-### Why SASS?
-<div class="whysass">
+<h2>Why SASS?</h2>
 SASS is an improvement on CSS in that there are methods of abstraction. It is a stylesheet language that is compiled into CSS, which means that Sass will translate the Sass code you wrote into CSS, which is what your web browser can read.
 </div>
 
 <div class="sassvsscss">
-
-### SASS vs SCSS
+<h2>SASS vs SCSS</h2>
 As you learn about Sass, you might notice something called Scss. They are basically the same thing except that Scss uses curly braces and semicolons to distinguish between lines. Sass uses indentation and newlines instead.
 
 We will be teaching the **Scss** syntax because it is more commonly used.
 </div>
+
+
 
 ### Sass Topics
 
