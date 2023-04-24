@@ -49,50 +49,15 @@ To have a UI (User Interface), you will need to use HTML. We can put our JS file
     <img src="imagessass/importsass.png" width="800" height="300">
     - This one is shown in line 28.
 
-<h1>Basic JavaScript Knowledge</h1>
-
-1. Variables- declare JavaScript variables with var, let or const. If the value of the variable can change, like a total, use let. If the value is set, like prices, use const. Variables can hold any data type. 
-2. Data types- there are 8 JS data types. 
-    - String: a series of characters, written with single or double quotes
-    - Number: can be integers or decimals. You can also have exponential notation for large/small numbers 
-    - Bigint: used to store integer values that are too big to be represented by a normal JS number
-    - Boolean: true or false, used in conditional testing
-    - Undefined: a variable without a value, has the value undefined/empty values
-    - Null: represents the intentional absence of any object value.
-    - Symbol: used to represent unique values that can be used as identifiers/keys in objects. They are also used to create private properties and methods in classes.
-    - Object: an unordered collection of key-value pairs. . Each key-value pair is called a property. 
-        - object: written with curly braces {}, name:value pairs, ex. "const car = {type:"Fiat", model:"500", color:"white"};"
-        - array: written with square brackets, separated by commas 
-3. Conditionals: control behavior, decides whether or not pieces of code can run.
-    - If: if a condition is true it is used to specify execution for a block of code.
-    - Els:e if the same condition is false it specifies the execution for a block of code.
-    - Else If: new test if the first condition is false.
-4. Iteration: 
-    - for loop: repeats until a specified condition evaluates to false
-    - do...while: repeats until a specified condition evaluates to false
-    - while statement: executes its statements as long as a specified condition evaluates to true
-    - label: provides a statement with an identifier that lets you refer to it later in the code. ex. you can use a label to identify a loop, and then use the break or continue statements to indicate whether a program should interrupt the loop or continue its execution
-    - break: used to terminate a loop, switch, or in conjunction with a labeled statement
-    - continue: can be used to restart a while, do-while, for, or label statement
-    - for...in: iterates a specified variable over all the enumerable properties of an object
-    - for...of statement creates a loop Iterating over iterable objects, invoking a custom iteration hook with statements to be executed for the value of each distinct property
-5. Functions: 
-    - defining: define with function + functionName(parameter) { function code }.  It can be unnamed/anonymous can be defined based on a condition.
-    - calling: simply put the function name with a parameter and semicolon, or a function can call itself (recursive)
-6. const- We use const to declare variables whose value can be initialized only at the time of declaration. Const means that the identifier cannot be reassigned. 
-
-<h1>JavaScript Functions/code in the Memory Game</h1>
-
+# JavaScript Functions/code in the Memory Game
 1. buttons: The memory cards are buttons which are shown in buttons tags in HTML. It has a onClick attribute for the actual function to work.
 2. onclick: occurs when the user clicks on an HTML element, usually a button, and executes the function
-3. flipCard
-4. unFlipCard
-5. disableCard
-5. checkMatch
-6. resetBoard
-7. shuffle
-8. calculateScore
-9. numAttempts
+3. flipCard: flips over the card the user clicks on 
+4. unFlipCard: flips the card over when there is no match
+5. disableCard: does not allow other cards to be flipped over when 2 are already flipped and unmatched
+5. checkMatch: checks for a match of the two flipped cards
+6. resetBoard: resets the board after each two flipped cards so there is a new "first card" and "second card"
+7. shuffle: shuffles the cards on the board
 
 <h1>Creating the Memory Game</h1>
 Step 1 - <mark>Create a Repository and open in your code editor</mark>
@@ -147,32 +112,6 @@ Step 4 - <mark>Setting up the Board Style</mark> Board CSS
 Step 5 - <mark>Card Flip in JavaScript</mark>
 1. Make a list of all memory card elements, stored in a constant. 
 2. Loop through the list, and attach an event listener which looks out for a click event. When the event occurs, is clicked, the function will occur. 
-'''
-babel 
-
-'''
-Shuffled Cards 
-
-Flipping Cards
-
-Unflipping Cards
-
-Disable Cards
-
-Matched Cards
-
-Reset Board
-
-Lock Board 
-    - avoid two sets of cards being turned at the same time, otherwise the flipping will fail
-
-Step 10 – Add a Score and Number of Attempts
-
-CSS 
-- By setting display: flex to the body and margin: auto to the .memory-game container, it will be centered both vertically and horizontally.
-
-
-
 
 
 
