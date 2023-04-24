@@ -28,15 +28,10 @@ We will be teaching the **Scss** syntax because it is more commonly used.
 
 
 
-#### Nesting
 
 
 
 
-#### Procedural Abstraction (Interpolation, @mixin, etc.)
-
-
-### Quiz!!!
 
 
 
