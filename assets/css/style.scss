@@ -193,6 +193,32 @@ a {
    position: absolute;
 }
 
+@keyframes slideInLeft {
+   from {
+      transform: translateX(-300px);
+   }
 
+   to{
+      transform: translateX(0);
+   }
+}
 
+@keyframes slideInRight {
+   from {
+      transform: translateX(300px);
+   }
+
+   to{
+      transform: translateX(0);
+   }
+}
+
+.whysass {
+   animation-name: slideInLeft;
+   animation-duration: 1s;
+   animation-timing-function: ease;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-fill-mode: both;
+}
 // matching ends here
