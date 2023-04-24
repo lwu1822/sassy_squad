@@ -25,6 +25,11 @@ To have a UI (User Interface), you will need to use HTML. We can put our JS file
 
 <img src="imagessass/javainhtml.png" width="550" height="350">
 
+Note: These are test:
+<img src="imagessass/javainhtml.png" width="550" height="350">
+
+![]("imagessass/javainhtml.png")
+
 <h1>Where do you store the JavaScript Code?</h1>
 
 1. You could have a separate JavaScript file full of your JavaScript code. The filename will end in .js
