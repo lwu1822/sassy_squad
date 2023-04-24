@@ -8,7 +8,7 @@
 
 2. <span style="color:blue">What is the difference between SASS and SCSS?</span><br> 
     a. They are very similar in their function, but their syntax is slightly different <br> 
-    b. They are the exact same, but SASS is more commonly used<br>  
+    b. They are the exact same, but SASS is more commonly used  
     c. SASS was developed by a larger company <br> 
 
 3. <span style="color:blue">What is an example of an advantage of using SASS over just CSS?</span>   
@@ -24,14 +24,14 @@
 5. <span style="color:blue">Which of the following is NOT an example of an available SASS directive?</span><br> 
     a. warn <br> 
     b. debug <br> 
-    c. each <br> 
+    c. import <br> 
     d. compute
 
 6. <span style="color:blue">The ______ directive is used to share rules and relationships between selectors.</span><br>
-    a. @each <br>
-    b. @extend <br>
-    c. @mixin <br>
-    d. @error <br>
+    a. each <br>
+    b. extend <br>
+    c. mixin <br>
+    d. error <br>
 
 7. <span style="color:blue">What is “@___” called?</span><br>
     a. Enhancement <br>
