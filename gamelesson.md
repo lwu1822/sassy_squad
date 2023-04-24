@@ -1,7 +1,10 @@
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+</script>
 </head>
-# Creating a game using JavaScript
+
+
+<h1>Creating a game using JavaScript</h1>
 
 
 
@@ -10,7 +13,7 @@ JavaScript is best for web-based and mobile games because it is generally easy t
 - an interpreted scripting language so code does not need to be compiled
 - instead, results are interpreted by a user’s command for example clicking and scrolling on the website. JavaScript can use that user input to perform an action accordingly.
 
-# Setting up 
+<h1>Setting up</h1>
 
 To have a UI (User Interface), you will need to use HTML. We can put our JS file as a script in the html by using script tags or linking a file. Script tags are fine for simple pages, but become confusing if you are doing complicated JS like a large app. 
 
@@ -20,7 +23,7 @@ To have a UI (User Interface), you will need to use HTML. We can put our JS file
 
 <img src="imagessass/javainhtml.png" width="550" height="350">
 
-# Where do you store the JavaScript Code?
+<h1>Where do you store the JavaScript Code?</h1>
 
 1. You could have a separate JavaScript file full of your JavaScript code. The filename will end in .js
 <img src="imagessass/jsfile.png" width="650" height="400">
@@ -38,7 +41,7 @@ To have a UI (User Interface), you will need to use HTML. We can put our JS file
     To refer to the code you can give id's to certain functions and then add the id tag inside of a *div container* or *button container* if the function is a button.
 
 
-# Where do you store the SASS Code?
+<h1>Where do you store the SASS Code?</h1>
 
 1. Create a .scss file at the same root level as your index.html file, make sure the file name ends in .scss This will be your SASS file.
 
@@ -46,7 +49,8 @@ To have a UI (User Interface), you will need to use HTML. We can put our JS file
     <img src="imagessass/importsass.png" width="800" height="300">
     - This one is shown in line 28.
 
-# Basic JavaScript Knowledge
+<h1>Basic JavaScript Knowledge</h1>
+
 1. Variables- declare JavaScript variables with var, let or const. If the value of the variable can change, like a total, use let. If the value is set, like prices, use const. Variables can hold any data type. 
 2. Data types- there are 8 JS data types. 
     - String: a series of characters, written with single or double quotes
@@ -77,7 +81,8 @@ To have a UI (User Interface), you will need to use HTML. We can put our JS file
     - calling: simply put the function name with a parameter and semicolon, or a function can call itself (recursive)
 6. const- We use const to declare variables whose value can be initialized only at the time of declaration. Const means that the identifier cannot be reassigned. 
 
-# JavaScript Functions/code in the Memory Game
+<h1>JavaScript Functions/code in the Memory Game</h1>
+
 1. buttons: The memory cards are buttons which are shown in buttons tags in HTML. It has a onClick attribute for the actual function to work.
 2. onclick: occurs when the user clicks on an HTML element, usually a button, and executes the function
 3. flipCard
@@ -89,7 +94,7 @@ To have a UI (User Interface), you will need to use HTML. We can put our JS file
 8. calculateScore
 9. numAttempts
 
-# Creating the Memory Game
+<h1>Creating the Memory Game</h1>
 Step 1 - <mark>Create a Repository and open in your code editor</mark>
 
 Step 2 - <mark>Set up index.html defining:</mark>
