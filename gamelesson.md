@@ -21,7 +21,6 @@ To have a UI (User Interface), you will need to use HTML. We can put our JS file
 
 **It looks like this**
 
-<iframe src="editors/HTMLeditor1.html" width="80%" height="400vh"></iframe>
 
 
 
