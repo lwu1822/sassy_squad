@@ -66,15 +66,15 @@ To have a UI (User Interface), you will need to use HTML. We can put our JS file
 
 # Basic JavaScript Knowledge
 1. Variables
-<iframe src="editors/JSeditor1.html" width="100%" height="400vh"></iframe>
+    <iframe src="editors/JSeditor1.html" width="100%" height="400vh"></iframe>
 2. Data types
-<iframe src="editors/JSeditor2.html" width="100%" height="400vh"></iframe>
+    <iframe src="editors/JSeditor2.html" width="100%" height="400vh"></iframe>
 3. Conditionals
-<iframe src="editors/JSeditor3.html" width="100%" height="400vh"></iframe>
+    <iframe src="editors/JSeditor3.html" width="100%" height="400vh"></iframe>
 4. Iteration
-<iframe src="editors/JSeditor4.html" width="100%" height="400vh"></iframe>
+    <iframe src="editors/JSeditor4.html" width="100%" height="400vh"></iframe>
 5. Functions
-<iframe src="editors/JSeditor5.html" width="100%" height="400vh"></iframe>
+    <iframe src="editors/JSeditor5.html" width="100%" height="400vh"></iframe>
 
 <h1>Creating the Memory Game</h1>
 Step 1 - <mark>Create a Repository and open in your code editor</mark>
