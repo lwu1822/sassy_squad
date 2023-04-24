@@ -221,4 +221,15 @@ a {
    animation-direction: normal;
    animation-fill-mode: both;
 }
+
+.sassvsscss {
+   animation-name: slideInRight;
+   animation-duration: 1s;
+   animation-timing-function: ease;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-fill-mode: both;
+}
+
+
 // matching ends here
