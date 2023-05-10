@@ -189,6 +189,8 @@ a {
    position: absolute;
 }
 
+// matching ends here
+
 @keyframes slideInLeft {
    from {
       transform: translateX(-300px);
@@ -227,5 +229,3 @@ a {
    animation-fill-mode: both;
 }
 
-
-// matching ends here
