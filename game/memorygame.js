@@ -51,4 +51,6 @@ function shuffle() {
     });
   }
   
+const cards = document.queryselectorAll('.box');
+
 cards.forEach(card => card.addEventListener('click', flipCard));
