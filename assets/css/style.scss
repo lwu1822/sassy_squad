@@ -157,18 +157,21 @@ a {
 // Kudos to https://marina-ferreira.github.io/tutorials/js/memory-game/. We wouldn't have gotten far without a tutorial.
 
 .board{
+   margin: auto;
    display: flex;
    flex-wrap: wrap;
+   perspective: 1000px;
 }
 
 .box{
    height: 16.60%;
    width: 20%;
    position: relative;
-   margin: auto
-   display; 
+   margin: auto; 
    flex-wrap: wrap;
-   perspective: ____px;
+   transform: scale(1);
+   transform-style: preserve-3d;
+   transition: transform .25s;
 }
 
 .box.flip {
