@@ -192,12 +192,17 @@ a {
 .Flipped {
    width: 8em;
    height: 4em;
-   //position: absolute;
+   transform: rotateY(180deg);
 }
 
 .Card {
    @extend %matchingButton;
    position: absolute;
+}
+
+.Card,
+.Flipped {
+   backface-visibility: hidden;
 }
 
 // matching ends here
@@ -273,14 +278,3 @@ a {
  }
  
  
- .front-face,
- .back-face {
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   backface-visibility: hidden;
- }
- 
- .front-face {
-   transform: rotateY(180deg);
- }
