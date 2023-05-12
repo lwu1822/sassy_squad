@@ -1,3 +1,5 @@
+const cards = document.queryselectorAll('.box');
+
 function flipCard() {
     if (lockBoard) return;
     if (this === firstCard) return;
@@ -50,7 +52,5 @@ function shuffle() {
       card.style.order = randomPos;
     });
   }
-  
-const cards = document.queryselectorAll('.box');
 
 cards.forEach(card => card.addEventListener('click', flipCard));
