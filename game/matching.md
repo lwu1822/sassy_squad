@@ -1,6 +1,6 @@
 # Matching!!!
 
-##### Match the colors to the corresponding hex values as quickly as possible!!!
+##### Make as many matches as you can in 1 minute!
 
 
 Kudos to this [guide](https://marina-ferreira.github.io/tutorials/js/memory-game/). We wouldn't have gotten far without it.
