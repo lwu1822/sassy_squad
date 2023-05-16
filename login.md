@@ -11,6 +11,6 @@
       <span class="state">Log in</span>
     </button>
   </form>
-  <footer><a target="blank" href="http://boudra.me/">boudra.me</a></footer>
+  <footer><a target="blank" href="http://boudra.me/">Credit: boudra.me</a></footer>
   </p>
 </div>
